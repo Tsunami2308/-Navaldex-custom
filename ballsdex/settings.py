@@ -176,6 +176,8 @@ def read_settings(path: "Path"):
         "ballsdex.packages.info",
         "ballsdex.packages.players",
         "ballsdex.packages.trade",
+        "ballsdex.packages.boss",
+        "ballsdex.packages.collector",
     ]
 
     settings.spawn_manager = content.get(
@@ -314,6 +316,8 @@ packages:
   - ballsdex.packages.info
   - ballsdex.packages.players
   - ballsdex.packages.trade
+  - ballsdex.packages.boss
+  - ballsdex.packages.collector
 
 # prometheus metrics collection, leave disabled if you don't know what this is
 prometheus:
@@ -431,6 +435,8 @@ packages:
   - ballsdex.packages.info
   - ballsdex.packages.players
   - ballsdex.packages.trade
+  - ballsdex.packages.boss
+  - ballsdex.packages.collector
 """
 
     if add_spawn_manager:
