@@ -85,7 +85,7 @@ class Collector(commands.GroupCog, group_name="collector"):
         embed.add_field(name="Remaining to Unlock", value=f"**{remaining}**", inline=False)
 
         await interaction.followup.send(embed=embed, ephemeral=True)    
-@app_commands.command()
+    @app_commands.command()
     async def claim(self, interaction: discord.Interaction, ship: BallTransform):
         """
         Reward the user with the Collector card if they have collected enough items.
